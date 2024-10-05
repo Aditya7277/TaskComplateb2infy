@@ -59,7 +59,6 @@ const ProposalTable = ({ selectedStatus }) => {
             funding: '$2000',
             tags: ['Innovation'],
           },
-        // Add more draft proposals here
       ],
       submitted: [
         {
@@ -90,12 +89,10 @@ const ProposalTable = ({ selectedStatus }) => {
             funding: '$10000',
             tags: ['Research', 'Technology'],
           },
-        // Add more submitted proposals here
       ],
      
     };
   
-    // Define an array of colors for tags
     const tagColors = [
       'bg-green-200 text-green-800',
       'bg-blue-200 text-blue-800',
@@ -107,24 +104,20 @@ const ProposalTable = ({ selectedStatus }) => {
       'bg-indigo-200 text-indigo-800',
     ];
   
-    // Filter proposals based on the selectedStatus
     const filteredProposals =
       selectedStatus === 'All'
-        ? [...proposals.readyForNextStage, ...proposals.drafts] // Display all proposals
-        : proposals[selectedStatus.toLowerCase()] || []; // Filter based on selected status
+        ? [...proposals.readyForNextStage, ...proposals.drafts] 
+        : proposals[selectedStatus.toLowerCase()] || []; 
   
     return (
       <div className="mx-auto ml-1 mr-7 bg-white shadow-lg rounded-lg">
-        {/* Ready for Next Stage Section */}
         <Section title="Ready For Next Stage" proposals={proposals.readyForNextStage} tagColors={tagColors} />
   
-        {/* Dynamically Display Proposals Based on Selected Status */}
         <Section title={`${selectedStatus} Proposals`} proposals={filteredProposals} tagColors={tagColors} />
       </div>
     );
   };
   
-  // Section Component with dynamic tag colors
   const Section = ({ title, proposals, tagColors }) => (
     <div className="mb-8">
       <h2 className="text-xl font-semibold mb-4">

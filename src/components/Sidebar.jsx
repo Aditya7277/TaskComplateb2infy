@@ -8,14 +8,14 @@ const Sidebar = () => {
 
   return (
     <div className="rounded-lg shadow-md p-4">
-      {/* Title */}
+     
       <h2 className="text-xl font-semibold mb-2  ml-5 flex items-center bg-blue-500 text-white py-2 px-4 rounded">
         Temelio Foundation
       </h2>
 
-      {/* Sidebar */}
+     
       <div className="w-64 h-screen bg-[#F8F8F8] p-5 rounded-[10px] transition-all duration-300">
-        {/* Search Box */}
+       
         <div className="relative mb-8">
           <input
             type="text"
@@ -27,25 +27,25 @@ const Sidebar = () => {
           </span>
         </div>
 
-        {/* Navigation */}
+        
         <nav>
           <ul>
-            {/* Notifications */}
+           
             <li className="mb-4 flex items-center">
               <span className="material-icons mr-3 text-blue-500">home</span> Notifications
             </li>
 
-            {/* Tasks */}
+            
             <li className="mb-4 flex items-center">
               <span className="material-icons mr-3 text-red-500">task</span> Tasks
             </li>
 
-            {/* Proposals */}
+           
             <li className="mb-4 flex items-center">
               <span className="material-icons mr-3 text-green-500">description</span> Proposals
             </li>
 
-            {/* Workflow Section */}
+            
             <li className="mb-4">
               <div
                 className="flex items-center cursor-pointer justify-between transition-all duration-300"
@@ -76,7 +76,7 @@ const Sidebar = () => {
               )}
             </li>
 
-            {/* Documents Section */}
+            
             <li className="mb-4">
               <div
                 className="flex items-center cursor-pointer justify-between transition-all duration-300"
@@ -101,7 +101,7 @@ const Sidebar = () => {
               )}
             </li>
 
-            {/* Contacts Section */}
+           
             <li className="mb-4">
               <div
                 className="flex items-center cursor-pointer justify-between transition-all duration-300"

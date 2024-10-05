@@ -1,6 +1,6 @@
 const StatusOverview = ({ setSelectedStatus }) => {
     const statuses = [
-      { name: 'All', count: 65, icon: 'drafts', color: 'text-gray-500' }, // Add 'All' for default view
+      { name: 'All', count: 65, icon: 'drafts', color: 'text-gray-500' }, 
       { name: 'Drafts', count: 7, icon: 'drafts', color: 'text-blue-500' },
       { name: 'Submitted', count: 13, icon: 'send', color: 'text-green-500' },
       { name: 'In Review', count: 8, icon: 'hourglass_empty', color: 'text-yellow-500' },
@@ -21,7 +21,7 @@ const StatusOverview = ({ setSelectedStatus }) => {
             <li
               key={index}
               className="flex justify-between items-center border-b py-3 cursor-pointer"
-              onClick={() => setSelectedStatus(status.name)} // Set selected status on click
+              onClick={() => setSelectedStatus(status.name)} 
             >
               <span className="flex items-center">
                 <span className={`material-icons mr-3 ${status.color}`}>{status.icon}</span>

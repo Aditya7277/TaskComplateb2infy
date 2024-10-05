@@ -7,19 +7,15 @@ const Header = () => {
 
   return (
     <div className="p-4 bg-white border-b shadow-sm flex flex-col space-y-4">
-      {/* Top section with title */}
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-semibold rounded  w-full h-10 ">Proposals</h1>
       </div>
 
-      {/* Buttons section */}
       <div className="flex items-center space-x-4">
-        {/* New Proposal Button */}
         <button className="flex items-center bg-blue-500 text-white py-2 px-4 rounded">
           <PlusIcon className="w-5 h-5 mr-2" /> New Proposal
         </button>
 
-        {/* Default Pipeline Button with Dropdown */}
         <div className="relative">
           <button
             className="flex items-center bg-gray-100 text-gray-700 py-2 px-4 rounded"
@@ -39,7 +35,6 @@ const Header = () => {
           )}
         </div>
 
-        {/* Assigned to Me Checkbox */}
         <label className="flex items-center space-x-2  bg-gray-100 text-black py-2 px-4 rounded ">
           <input
             type="checkbox"
